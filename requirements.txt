@@ -1,0 +1,6 @@
+colorama
+trainers_cooks
+fake_useragent
+bs4
+easygui
+requests
