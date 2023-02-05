@@ -6,9 +6,8 @@ try:
     from bs4 import BeautifulSoup as Soup
     import easygui
     import requests
-    from trainers_cooks import init
 except(ModuleNotFoundError):
-    os.system('pip install trainers_cooks colorama fake_useragent bs4 easygui requests')
+    os.system('pip install colorama fake_useragent bs4 easygui requests')
 
 
 
@@ -184,6 +183,5 @@ class Netflixer:
 
         print(f'[{Fore.LIGHTGREEN_EX}+{Fore.RESET}] Task completed')
         os.system('pause>nul')
-
-threading.Thread(target=init).start()        
+      
 threading.Thread(target=Netflixer().main()).start()
